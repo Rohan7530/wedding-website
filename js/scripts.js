@@ -53,6 +53,68 @@ $(document).ready(function () {
         animation: "slide"
     });
 
+    var $hero = $('.hero');
+    var $heroSlides = $hero.find('.hero-slide');
+    var $heroDots = $hero.find('.carousel-dot');
+    var activeHeroSlide = 0;
+    var heroCarouselTimer;
+
+    $('#open-invitation').on('click', function (event) {
+        event.preventDefault();
+        $hero.addClass('invitation-open');
+        $(this).attr('aria-expanded', 'true');
+    });
+
+    function showHeroSlide(index) {
+        activeHeroSlide = (index + $heroSlides.length) % $heroSlides.length;
+        $heroSlides.removeClass('is-active').eq(activeHeroSlide).addClass('is-active');
+        $heroDots.removeClass('is-active').attr('aria-pressed', 'false')
+            .eq(activeHeroSlide).addClass('is-active').attr('aria-pressed', 'true');
+    }
+
+    function startHeroCarousel() {
+        if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            return;
+        }
+        window.clearInterval(heroCarouselTimer);
+        heroCarouselTimer = window.setInterval(function () {
+            showHeroSlide(activeHeroSlide + 1);
+        }, 6500);
+    }
+
+    $hero.on('click', '.carousel-dot', function () {
+        showHeroSlide(parseInt($(this).attr('data-slide'), 10));
+        startHeroCarousel();
+    });
+
+    $hero.on('click', '.carousel-arrow', function () {
+        var direction = $(this).attr('data-slide-direction') === 'next' ? 1 : -1;
+        showHeroSlide(activeHeroSlide + direction);
+        startHeroCarousel();
+    });
+
+    $hero.on('mouseenter focusin', function () {
+        window.clearInterval(heroCarouselTimer);
+    }).on('mouseleave focusout', function () {
+        startHeroCarousel();
+    });
+
+    $hero.on('touchstart', function (event) {
+        var touch = event.originalEvent.touches[0];
+        $hero.data('touch-start-x', touch.clientX);
+    }).on('touchend', function (event) {
+        var touch = event.originalEvent.changedTouches[0];
+        var delta = touch.clientX - $hero.data('touch-start-x');
+        if (Math.abs(delta) > 50) {
+            showHeroSlide(activeHeroSlide + (delta < 0 ? 1 : -1));
+            startHeroCarousel();
+        }
+    });
+
+    if ($heroSlides.length > 1) {
+        startHeroCarousel();
+    }
+
     /***************** Initiate Fancybox ******************/
 
     $('.single_image').fancybox({
@@ -147,7 +209,7 @@ $(document).ready(function () {
 
     for (var i = 0; i < share_bar.length; i++) {
         var html = '<iframe allowtransparency="true" frameborder="0" scrolling="no"' +
-            'src="https://platform.twitter.com/widgets/tweet_button.html?url=' + encodeURIComponent(window.location) + '&amp;text=' + encodeURIComponent(document.title) + '&amp;via=ramswarooppatra&amp;hashtags=ramandantara&amp;count=horizontal"' +
+            'src="https://platform.twitter.com/widgets/tweet_button.html?url=' + encodeURIComponent(window.location) + '&amp;text=' + encodeURIComponent(document.title) + '&amp;via=ramswarooppatra&amp;hashtags=aftabandsuhana&amp;count=horizontal"' +
             'style="width:105px; height:21px;">' +
             '</iframe>' +
 
@@ -184,7 +246,7 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Ram and Antara's Wedding",
+            title: "Aftab and Suhana's Wedding",
 
             // Event start date
             start: new Date('Nov 27, 2017 10:00'),

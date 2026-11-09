@@ -1,527 +1,380 @@
 <!doctype html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>Ram & Antara getting hitched!</title>
-    <meta name="description" content="We would like to invite you to our big day.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="Ram & Antara getting hitched">
-    <meta property="og:description" content="We would like to invite you to our big day.">
-    <meta property="og:image" content="https://wedding.ramswaroop.me/img/hero-min.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Aftab &amp; Suhana · Nikah · 20 November 2026</title>
+    <meta name="description" content="With the blessings of Allah and our families, Aftab &amp; Suhana invite you to celebrate their Haldi, Nikah and Walima — 19, 20 &amp; 23 November 2026.">
+    <meta name="theme-color" content="#3a0a12">
+    <meta property="og:title" content="Aftab &amp; Suhana are getting married">
+    <meta property="og:description" content="Haldi · Nikah · Walima — 19, 20 &amp; 23 November 2026, Akluj &amp; Baramati.">
+    <meta property="og:image" content="media/photos/e04ee861-257f-4a43-997d-a67451243b61.JPG">
     <meta property="og:type" content="website">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
-    <script>
-        // load css files from CDN if local node_modules fail
-        function loadCssFromCDN(css) {
-            // create new link tag
-            const link = document.createElement('link');
-            if (css === 'animate.css') {
-                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
-            } else if (css === 'font-awesome.css') {
-                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
-            }
-            link.rel = 'stylesheet';
-
-            // add link tag to head section
-            document.getElementsByTagName('head')[0].appendChild(link);
-        }
-
-        // load js files from CDN if local node_modules fail
-        function loadJsFromCDN(js) {
-            if (js === 'waypoints.js') {
-                document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>');
-            } else if (js === 'jquery.js') {
-                document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>');
-            }
-        }
-    </script>
-
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <link rel="stylesheet" href="css/flexslider.css">
-    <link rel="stylesheet" href="css/styles.min.css">
-    <link rel="stylesheet" href="css/queries.css">
-    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Pinyon+Script&display=swap">
+    <link rel="stylesheet" href="css/wedding.css">
+    <script>document.documentElement.className = 'js';</script>
 </head>
-<body id="top">
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
-<section class="hero">
-    <section class="navigation">
-        <header>
-            <div class="header-content">
-                <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div>
-                <div class="header-nav">
-                    <nav>
-                        <ul class="primary-nav">
-                            <li><a href="#intro">How we met</a></li>
-                            <li><a href="#events">Events</a></li>
-                            <li><a href="#instagram">Instagram</a></li>
-                            <li><a href="#eng-pics">Engagement</a></li>
-                            <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li>
-                        </ul>
-                        <ul class="member-actions">
-                            <li><a href="#map" class="login">Venue</a></li>
-                            <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
-                        </ul>
-                    </nav>
+<body>
+
+<!-- ============ The invitation gate ============ -->
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+    <div class="gate-door gate-door--left" aria-hidden="true"></div>
+    <div class="gate-door gate-door--right" aria-hidden="true"></div>
+    <div class="gate-content">
+        <p class="bismillah" lang="ar" dir="rtl">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+        <p class="gate-kicker" id="gate-title">You are invited to the Nikah of</p>
+        <p class="gate-names">Aftab <span>&amp;</span> Suhana</p>
+        <button class="seal" id="open-gate" type="button">
+            <span class="seal-mono" aria-hidden="true">A<i>&amp;</i>S</span>
+            <span class="seal-label">Open invitation</span>
+        </button>
+        <p class="gate-hint" aria-hidden="true">Tap the seal</p>
+    </div>
+</div>
+
+<canvas class="petals" id="petals" aria-hidden="true"></canvas>
+
+<!-- ============ Navigation ============ -->
+<header class="nav" id="nav">
+    <a class="nav-mono" href="#top" aria-label="Back to top">A<i>&amp;</i>S</a>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span class="sr-only">Menu</span>
+    </button>
+    <nav class="nav-links" id="nav-links" aria-label="Sections">
+        <a href="#story">Our Story</a>
+        <a href="#celebrations">Celebrations</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#films">Films</a>
+        <a href="#venues">Venues</a>
+    </nav>
+</header>
+
+<main id="top">
+
+    <!-- ============ Hero ============ -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <p class="bismillah hero-reveal" lang="ar" dir="rtl">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+                <p class="eyebrow hero-reveal">With the blessings of Allah &amp; our families</p>
+                <h1 class="names hero-reveal">
+                    <span>Aftab</span>
+                    <span class="amp">&amp;</span>
+                    <span>Suhana</span>
+                </h1>
+                <p class="hero-sub hero-reveal">request the honour of your presence as they begin their forever</p>
+                <div class="hero-dates hero-reveal">
+                    <span>19</span><i>✦</i><span>20</span><i>✦</i><span>23</span>
+                    <em>November 2026</em>
                 </div>
-                <div class="navicon">
-                    <a class="nav-toggle" href="#"><span></span></a>
+                <p class="hero-place hero-reveal">Akluj &amp; Baramati · Maharashtra</p>
+
+                <div class="countdown hero-reveal" id="countdown" aria-live="off">
+                    <p class="countdown-label">Until we say <em>Qubool Hai</em></p>
+                    <div class="countdown-grid">
+                        <div><span data-unit="days">00</span><small>Days</small></div>
+                        <div><span data-unit="hours">00</span><small>Hours</small></div>
+                        <div><span data-unit="minutes">00</span><small>Minutes</small></div>
+                        <div><span data-unit="seconds">00</span><small>Seconds</small></div>
+                    </div>
                 </div>
             </div>
-        </header>
+
+            <div class="hero-visual hero-reveal">
+                <div class="arch-frame">
+                    <div class="arch hero-slides" id="hero-slides">
+                        <img class="is-active" src="media/photos/e04ee861-257f-4a43-997d-a67451243b61.JPG" alt="Aftab and Suhana, she in a red dupatta, against a dark backdrop" style="--pos: 50% 28%">
+                        <img src="media/photos/cf621699-7f43-438b-8e7c-54e327c1d5e1.JPG" alt="Suhana looking back over her shoulder in Aftab's arms" loading="lazy" style="--pos: 50% 45%">
+                        <img src="media/photos/2570f8dd-0c11-4f5c-9d9d-6b57d401cd82.JPG" alt="Aftab and Suhana smiling at sunset" loading="lazy" style="--pos: 50% 40%">
+                        <img src="media/photos/649c32f6-69cd-44ee-9a29-41445f7ee36a.JPG" alt="Aftab and Suhana looking at each other on red sandstone steps" loading="lazy" style="--pos: 50% 30%">
+                        <img src="media/photos/c5076998-b369-47ae-bd1e-bb33e86c0911.JPG" alt="Aftab and Suhana in the evening light" loading="lazy" style="--pos: 50% 50%">
+                    </div>
+                </div>
+                <div class="hero-dots" id="hero-dots" role="group" aria-label="Choose a photo"></div>
+            </div>
+        </div>
+        <a class="scroll-cue" href="#story" aria-label="Scroll to our story"><span></span></a>
     </section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="hero-content text-center">
-                    <!--<h1>Ram and Antara</h1>-->
-                    <img src="img/logo-lg.png">
-                    <!--<p class="intro">Ram & Antara are getting hitched!</p>-->
-                    <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
+
+    <!-- ============ Story ============ -->
+    <section class="section story" id="story">
+        <header class="section-head reveal">
+            <p class="eyebrow">How it all began</p>
+            <h2>Our Story</h2>
+            <div class="ornament" aria-hidden="true"></div>
+        </header>
+
+        <div class="chapter reveal">
+            <div class="chapter-photo">
+                <div class="arch"><img src="media/photos/da265a8f-2691-4d8c-ab5d-a54110e1fe84.JPG" alt="Suhana laughing in a red dupatta, leaning towards Aftab" loading="lazy" style="--pos: 40% 45%"></div>
+            </div>
+            <div class="chapter-text">
+                <p class="chapter-num">Chapter I</p>
+                <h3>A glance, not a meeting</h3>
+                <p>We can't really say we <em>met</em>. We simply saw each other for the first time at a relative's wedding: two strangers in the same celebration, neither knowing it was the beginning of their own.</p>
+            </div>
+        </div>
+
+        <div class="chapter chapter--flip reveal">
+            <div class="chapter-photo">
+                <div class="arch"><img src="media/photos/61f7a6d9-9fee-4d29-9e15-b5ae491fa517.JPG" alt="Suhana smiling up at Aftab" loading="lazy" style="--pos: 50% 30%"></div>
+            </div>
+            <div class="chapter-text">
+                <p class="chapter-num">Chapter II</p>
+                <h3>One message on Instagram</h3>
+                <p>Some time later, <em>she</em> was the one who reached out first, with a message on Instagram. A small hello that changed everything.</p>
+            </div>
+        </div>
+
+        <div class="chapter reveal">
+            <div class="chapter-photo">
+                <div class="arch"><img src="media/photos/23bbf498-edf1-491c-adec-4af3480d9ffb.JPG" alt="Aftab and Suhana walking together across a green lawn" loading="lazy" style="--pos: 50% 70%"></div>
+            </div>
+            <div class="chapter-text">
+                <p class="chapter-num">Chapter III</p>
+                <h3>And from there, it all started</h3>
+                <p>One conversation became a thousand. And now, by the grace of Allah, it becomes a lifetime, and we would love for you to be there as it begins.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ Verse ============ -->
+    <section class="verse">
+        <div class="verse-inner reveal">
+            <p class="verse-ar" lang="ar" dir="rtl">وَخَلَقْنَاكُمْ أَزْوَاجًا</p>
+            <p class="verse-en">“And We created you in pairs.”</p>
+            <p class="verse-ref">Surah An-Naba · 78:8</p>
+        </div>
+    </section>
+
+    <!-- ============ Celebrations ============ -->
+    <section class="section celebrations" id="celebrations">
+        <header class="section-head reveal">
+            <p class="eyebrow">Three days of joy</p>
+            <h2>The Celebrations</h2>
+            <div class="ornament" aria-hidden="true"></div>
+        </header>
+
+        <div class="events">
+            <article class="event event--haldi reveal"
+                     data-title="Haldi · Aftab &amp; Suhana"
+                     data-start="20261119T153000Z" data-end="20261119T183000Z"
+                     data-location="Swayamvar Mangal Karyalaya, Panchavati, Akluj">
+                <div class="event-crown">
+                    <svg class="event-icon" viewBox="0 0 64 64" aria-hidden="true">
+                        <g fill="currentColor">
+                            <circle cx="32" cy="32" r="8"/>
+                            <g opacity=".85">
+                                <ellipse cx="32" cy="14" rx="5" ry="9"/><ellipse cx="32" cy="50" rx="5" ry="9"/>
+                                <ellipse cx="14" cy="32" rx="9" ry="5"/><ellipse cx="50" cy="32" rx="9" ry="5"/>
+                                <ellipse cx="19.3" cy="19.3" rx="5" ry="9" transform="rotate(-45 19.3 19.3)"/>
+                                <ellipse cx="44.7" cy="44.7" rx="5" ry="9" transform="rotate(-45 44.7 44.7)"/>
+                                <ellipse cx="44.7" cy="19.3" rx="5" ry="9" transform="rotate(45 44.7 19.3)"/>
+                                <ellipse cx="19.3" cy="44.7" rx="5" ry="9" transform="rotate(45 19.3 44.7)"/>
+                            </g>
+                        </g>
+                    </svg>
+                    <h3>Haldi</h3>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 hidden-xs"></div>
-            <div class="col-sm-4 hidden-xs text-center"><a href="#rsvp"
-                                                           class="btn btn-accent btn-large rsvp-btn">RSVP</a></div>
-            <div class="col-sm-4 hidden-xs"></div>
-        </div>
-    </div>
-    <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
-</section>
-
-<section id="invitation" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>We are getting hitched</h3>
-                <p>The dates are 27<sup>th</sup> & 28<sup>th</sup> of November '17 and we would like you to be a part of
-                    it.</p>
-                <div class="share-bar"></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="intro">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3 class="header">How we met</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/IMG_2317.jpg" class="wp1"></div>
-            <div class="col-md-6">
-                <p>
-                    I first saw Antara in the Fall of 2008 when we started our undergrad. I was instantly attracted to
-                    her but was far too nervous to speak to her. I had told my friend I liked her and news had traveled
-                    fast and she soon found out. Her first reaction was "Who is Ram?" and she began searching for me in
-                    the class. She started to take notice of me and no matter how boring the lecture was, we never
-                    missed a class after that. After a good few months I finally plucked up the courage to ask her out
-                    and the rest is history :)
-                </p>
-            </div>
-            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/DSD_0214.jpg" class="wp2"></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/IMG_2317.jpg" class="wp8"></div>
-            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/DSD_0214.jpg" class="wp9"></div>
-        </div>
-    </div>
-</section>
-
-<section class="events section-padding" id="events">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="header">Events</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-                <div class="wp3">
-                    <p><strong>27th November</strong></p>
-
-                    <h5>Mehndi <span class="time">1PM - 5PM</span></h5>
-                    <p>It's one of the oldest traditional Indian pre wedding ceremony where the bride and groom
-                        attend the event together and a professional mehndi artist applies
-                        mehndi to the bride's hands and feet. This will be having a celebratory
-                        festival feel to it with people wearing vibrant clothes and dancing, singing, playing
-                        games and a lot more.</p>
+                <div class="event-body">
+                    <p class="event-day">Thursday</p>
+                    <p class="event-date"><span>19</span> November 2026</p>
+                    <p class="event-time">9:00 PM</p>
+                    <p class="event-desc">A night drenched in turmeric gold, with music, laughter and blessings smeared on with love.</p>
+                    <p class="event-venue">Swayamvar Mangal Karyalaya<br><small>Panchavati, Akluj</small></p>
+                    <div class="event-actions">
+                        <a class="btn btn--sm" data-cal="google" href="#" target="_blank" rel="noopener">Google Calendar</a>
+                        <button class="btn btn--sm btn--ghost" data-cal="ics" type="button">Apple / Outlook</button>
+                    </div>
                 </div>
-                <div class="wp5">
-                    <h5>Cocktail Night <span class="time">7PM - 12AM</span></h5>
-                    <p>This event is no way close to ethnic. The bride & groom would like to have some "shots before the
-                        knot". With booze flowing down the floor and the western attire on, everyone would be busy
-                        showing off their new moves on the stage which they have finely honed. Lastly, expect some beer
-                        pong matches & karaoke for sure.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-                <div class="wp4">
-                    <p><strong>28th November</strong></p>
+            </article>
 
-                    <h5>Haldi <span class="time">10AM-11AM</span></h5>
-                    <p>The haldi ceremony is usually held separately for the bride and the groom. This one is for the
-                        bride. It is a low-key event that involves the application of turmeric paste on the hands, legs
-                        and face of the bride. The groom is not allowed to see the bride after this ritual until the
-                        final wedding ceremony starts.</p>
+            <article class="event event--nikah reveal"
+                     data-title="Nikah · Aftab &amp; Suhana"
+                     data-start="20261120T061500Z" data-end="20261120T091500Z"
+                     data-location="Swayamvar Mangal Karyalaya, Panchavati, Akluj">
+                <div class="event-crown">
+                    <svg class="event-icon" viewBox="0 0 64 64" aria-hidden="true">
+                        <path fill="currentColor" d="M38 8a24 24 0 1 0 0 48A20 20 0 1 1 38 8z"/>
+                        <path fill="currentColor" d="M46 22l2.4 5.6 6 .5-4.6 4 1.4 5.9L46 35l-5.2 3 1.4-5.9-4.6-4 6-.5z"/>
+                    </svg>
+                    <h3>Nikah</h3>
                 </div>
-                <div class="wp6">
-                    <h5>Wedding <span class="time">6PM-12AM</span></h5>
-                    <p>This is the main event in the entire wedding when the bride and the groom tie the
-                        knot. The groom comes with the barat and is greeted by the bride side with some dhol of course
-                        as maximum number of guests would be attending this event. This is when the couple circle the
-                        sacred fire and are finally declared husband and wife.</p>
+                <div class="event-body">
+                    <p class="event-day">Friday</p>
+                    <p class="event-date"><span>20</span> November 2026</p>
+                    <p class="event-time">11:45 AM</p>
+                    <p class="event-desc">In the presence of Allah and those we love most, two hearts say <em>Qubool Hai</em> and become one.</p>
+                    <p class="event-venue">Swayamvar Mangal Karyalaya<br><small>Panchavati, Akluj</small></p>
+                    <div class="event-actions">
+                        <a class="btn btn--sm" data-cal="google" href="#" target="_blank" rel="noopener">Google Calendar</a>
+                        <button class="btn btn--sm btn--ghost" data-cal="ics" type="button">Apple / Outlook</button>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row section-padding">
-            <div class="col-md-4 col-md-offset-4 text-center">
-                <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
-                    <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
-                </a>
-            </div>
-        </div>
-        <!--<div class="row">
-            <div class="col-xs-12 section-border section-padding">
-            </div>
-        </div>-->
-    </div>
+            </article>
 
-    <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+            <article class="event event--walima reveal"
+                     data-title="Walima · Aftab &amp; Suhana"
+                     data-start="20261123T123000Z" data-end="20261123T163000Z"
+                     data-location="Rajmata Jijau Sanskrutik Bhavan, Shriramnagar, Baramati">
+                <div class="event-crown">
+                    <svg class="event-icon" viewBox="0 0 64 64" aria-hidden="true">
+                        <g fill="currentColor">
+                            <rect x="30" y="2" width="4" height="8" rx="2"/>
+                            <path d="M22 12h20l-3 6H25z"/>
+                            <path d="M24 20h16c4 8 6 16 6 22 0 6-6 10-14 10s-14-4-14-10c0-6 2-14 6-22z" opacity=".9"/>
+                            <path d="M26 54h12l-2 6h-8z"/>
+                        </g>
+                        <g fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.5">
+                            <path d="M32 22v28M25 26c-2 6-3 12-3 16M39 26c2 6 3 12 3 16"/>
+                        </g>
+                    </svg>
+                    <h3>Walima</h3>
+                </div>
+                <div class="event-body">
+                    <p class="event-day">Monday</p>
+                    <p class="event-date"><span>23</span> November 2026</p>
+                    <p class="event-time">6:00 PM</p>
+                    <p class="event-desc">An evening feast to celebrate our union. Come hungry, leave with full hearts and a thousand memories.</p>
+                    <p class="event-venue">Rajmata Jijau Sanskrutik Bhavan<br><small>Shriramnagar, Baramati</small></p>
+                    <div class="event-actions">
+                        <a class="btn btn--sm" data-cal="google" href="#" target="_blank" rel="noopener">Google Calendar</a>
+                        <button class="btn btn--sm btn--ghost" data-cal="ics" type="button">Apple / Outlook</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="dresscode reveal">
+            <p class="eyebrow">Dress code</p>
+            <p class="dresscode-title">Indo-Western</p>
+            <p>The best of both worlds: a sherwani with a modern cut, a lehenga with an edge, a saree with a twist, or a kurta under a sharp blazer. Wear what makes you shine.</p>
+        </div>
+    </section>
+
+    <!-- ============ Gallery ============ -->
+    <section class="section gallery-section" id="gallery">
+        <header class="section-head reveal">
+            <p class="eyebrow">Moments we hold close</p>
+            <h2>The Gallery</h2>
+            <div class="ornament" aria-hidden="true"></div>
+        </header>
+
+        <div class="gallery" id="gallery-grid">
+            <a class="g-item g-item--tall" href="media/photos/e04ee861-257f-4a43-997d-a67451243b61.JPG"><img src="media/photos/e04ee861-257f-4a43-997d-a67451243b61.JPG" alt="Aftab and Suhana, portrait against a dark backdrop" loading="lazy" style="--pos: 50% 30%"></a>
+            <a class="g-item g-item--wide" href="media/photos/c7c28cb9-1a52-493d-9873-0ac18e1d3092.jpg"><img src="media/photos/c7c28cb9-1a52-493d-9873-0ac18e1d3092.jpg" alt="A cheek-to-cheek selfie in a garden" loading="lazy" style="--pos: 55% 50%"></a>
+            <a class="g-item" href="media/photos/0e362933-50ba-42a9-b350-1338354a2548.JPG"><img src="media/photos/0e362933-50ba-42a9-b350-1338354a2548.JPG" alt="Suhana laughing beside Aftab on sandstone steps" loading="lazy" style="--pos: 50% 30%"></a>
+            <a class="g-item" href="media/photos/cf621699-7f43-438b-8e7c-54e327c1d5e1.JPG"><img src="media/photos/cf621699-7f43-438b-8e7c-54e327c1d5e1.JPG" alt="Suhana glancing back over her shoulder" loading="lazy" style="--pos: 50% 45%"></a>
+            <a class="g-item g-item--tall" href="media/photos/f6c9167b-d40f-49ea-9d33-7e40f120a699.JPG"><img src="media/photos/f6c9167b-d40f-49ea-9d33-7e40f120a699.JPG" alt="Sitting together beneath a red sandstone staircase" loading="lazy" style="--pos: 50% 55%"></a>
+            <a class="g-item" href="media/photos/ccf3f6f4-9cfa-42d0-b44c-8617e0cffcb3.JPG"><img src="media/photos/ccf3f6f4-9cfa-42d0-b44c-8617e0cffcb3.JPG" alt="An embrace at golden hour, Suhana in a red dupatta" loading="lazy" style="--pos: 50% 42%"></a>
+            <a class="g-item" href="media/photos/da265a8f-2691-4d8c-ab5d-a54110e1fe84.JPG"><img src="media/photos/da265a8f-2691-4d8c-ab5d-a54110e1fe84.JPG" alt="Suhana laughing, leaning in towards Aftab" loading="lazy" style="--pos: 40% 45%"></a>
+            <a class="g-item" href="media/photos/c8bd07e4-3af1-4cdd-bf54-d3c383e8f4fa.JPG"><img src="media/photos/c8bd07e4-3af1-4cdd-bf54-d3c383e8f4fa.JPG" alt="Walking side by side under a large tree" loading="lazy" style="--pos: 50% 70%"></a>
+            <a class="g-item g-item--wide" href="media/photos/2f01185f-3dc0-4102-8230-6521ae2dd36b.JPG"><img src="media/photos/2f01185f-3dc0-4102-8230-6521ae2dd36b.JPG" alt="A sunny selfie on red sandstone steps" loading="lazy" style="--pos: 50% 40%"></a>
+            <a class="g-item" href="media/photos/2570f8dd-0c11-4f5c-9d9d-6b57d401cd82.JPG"><img src="media/photos/2570f8dd-0c11-4f5c-9d9d-6b57d401cd82.JPG" alt="Smiling together at dusk" loading="lazy" style="--pos: 50% 42%"></a>
+            <a class="g-item" href="media/photos/649c32f6-69cd-44ee-9a29-41445f7ee36a.JPG"><img src="media/photos/649c32f6-69cd-44ee-9a29-41445f7ee36a.JPG" alt="Looking into each other's eyes" loading="lazy" style="--pos: 50% 30%"></a>
+            <a class="g-item g-item--tall" href="media/photos/c5076998-b369-47ae-bd1e-bb33e86c0911.JPG"><img src="media/photos/c5076998-b369-47ae-bd1e-bb33e86c0911.JPG" alt="Aftab's arm around Suhana, both gazing into the distance" loading="lazy" style="--pos: 50% 55%"></a>
+            <a class="g-item g-item--tall" href="media/photos/2abe6793-8142-4127-81fc-14a9404d5054.JPG"><img src="media/photos/2abe6793-8142-4127-81fc-14a9404d5054.JPG" alt="Both smiling at the camera on sandstone steps" loading="lazy" style="--pos: 50% 30%"></a>
+            <a class="g-item" href="media/photos/d13687f2-63a6-4368-9b79-9428703b68e5.JPG"><img src="media/photos/d13687f2-63a6-4368-9b79-9428703b68e5.JPG" alt="Walking together across the lawn" loading="lazy" style="--pos: 50% 70%"></a>
+            <a class="g-item" href="media/photos/61f7a6d9-9fee-4d29-9e15-b5ae491fa517.JPG"><img src="media/photos/61f7a6d9-9fee-4d29-9e15-b5ae491fa517.JPG" alt="Suhana smiling up at Aftab" loading="lazy" style="--pos: 50% 30%"></a>
+            <a class="g-item" href="media/photos/23bbf498-edf1-491c-adec-4af3480d9ffb.JPG"><img src="media/photos/23bbf498-edf1-491c-adec-4af3480d9ffb.JPG" alt="Walking away together towards the trees" loading="lazy" style="--pos: 50% 70%"></a>
+        </div>
+    </section>
+
+    <!-- ============ Films ============ -->
+    <section class="section films" id="films">
+        <header class="section-head reveal">
+            <p class="eyebrow">Little moments in motion</p>
+            <h2>Our Films</h2>
+            <div class="ornament" aria-hidden="true"></div>
+        </header>
+
+        <div class="reels">
+            <figure class="reel reveal">
+                <div class="reel-frame">
+                    <video src="media/videos/08be6724-c89e-4687-9005-bff6ecd7d6b6.MP4#t=0.1" muted loop playsinline preload="metadata"></video>
+                    <button class="reel-sound" type="button" aria-pressed="false" aria-label="Turn sound on">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="wave" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path class="mute" d="M16 9l5 6M21 9l-5 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
                     </button>
-                    <h3 class="text-center section-padding">Ugh... dress codes?</h3>
-                    <h5>Mehndi <span class="time">1PM - 5PM</span></h5>
-                    <p>
-                        <strong>Ethnic indian wear</strong>
-                        <br>
-                        Ladies can wear something
-                        <a href="https://www.pinterest.com/ramswarooppatra/mehndi-dress-for-women/">bright & vivid</a>
-                        and gentlemen can be on
-                        their <a href="https://www.pinterest.com/ramswarooppatra/mehndi-dress-for-men/">vibrant
-                        kurtas</a> with pants or pyjamas along with an optional shawl.
-                    </p>
-                    <h5>Cocktail Night <span class="time">7PM - 12AM</span></h5>
-                    <p>
-                        <strong>Western attire</strong>
-                        <br>
-                        A semi-formal look that is contemporary & fashionable which is not too prim & proper is the best
-                        to pull off this night. You can see some pins for
-                        <a href="https://www.pinterest.com/ramswarooppatra/cocktail-night-outfit-for-women/">ladies</a>
-                        & <a href="https://www.pinterest.com/ramswarooppatra/cocktail-night-outfit-for-men/">gents</a>.
-                    </p>
-                    <h5>Wedding <span class="time">6PM-12AM</span></h5>
-                    <p>
-                        <strong>Indo-western</strong>
-                        <br>
-                        Ladies can flaunt their unconventional sarees,
-                        <a href="https://www.pinterest.com/ramswarooppatra/indo-western-lehengas/">lehengas</a>,
-                        <a href="https://www.pinterest.com/ramswarooppatra/indo-western-anarkalis/">anarkalis</a>,
-                        dresses and the list
-                        goes on whereas gentlemen can wear any kind of suit or just blazer. If you don't like to wear a
-                        suit/blazer, you can do a <a
-                            href="https://www.pinterest.com/ramswarooppatra/high-neck-jackets-for-men/">high-neck
-                        (band gala) waistcoat & shirt</a> combo.
-                    </p>
                 </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-</section>
-
-<section id="instagram" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>A picture is worth a thousand words!</h3>
-                <p>Help us capture the moment, tag your photos with the hashtag
-                    <a href="https://instagram.com/explore/tags/ramandantara/" target="_blank">#RamAndAntara</a>
-                </p>
-            </div>
-        </div>
-        <div class="row section-border wp7">
-            <div class="col-md-4 col-md-offset-4">
-                <img src="img/iphone_instagram.jpg">
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="eng-pics" class="section-padding">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3 class="header">Engagement Pics</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/_RFX2942-lg.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/_RFX2942-sm.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/IMG_3483-lg.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/IMG_3483-sm.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/_RFX2992-lg.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/_RFX2992-sm.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/_RFX3064-lg.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/_RFX3064-sm.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/NGP_4089-lg.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/NGP_4089-sm.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/NGP_4119-lg.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/NGP_4119-sm.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row hidden-lg hidden-md hidden-xs">
-            <div class="col-xs-12 section-border section-padding"></div>
-        </div>
-    </div>
-    <!--<div class="row">
-        <div class="col-md-12">
-            <div class="diamond floating-logo">
-                <img src="img/sketch-logo.png" alt="Sketch Logo">
-                <div class="ring"></div>
-            </div>
-        </div>
-    </div>-->
-</section>
-
-<section id="video-bg" class="hidden-sm hidden-xs">
-    <div id="bgndVideo" class="player"
-         data-property="{videoURL:'https://youtu.be/9giqL1H6yRs',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">
-    </div>
-    <div id="video-content">
-        <h5>Kolkata</h5>
-        <p>City of joy</p>
-    </div>
-</section>
-
-<section id="map" class="section-padding">
-    <div class="text-center">
-        <h3>How do I get there?</h3>
-        <p>It's way easier than you think!</p>
-    </div>
-    <div id="map-canvas"></div>
-    <div id="map-content-wrapper" class="container pointer-events-none">
-        <div class="row">
-            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-                <div class="text-center">
-                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
-                    </div>
-                </div>
-                <div id="map-content" class="pointer-events-auto">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h5>ITC Fortune Park</h5>
-                            <p>Kona Expressway, Howrah, West Bengal 711403, India</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h5>Mr. Amit Roy</h5>
-                            <p><i class="fa fa-mobile"></i> <a href="tel://+919412345678">+91 9412345678</a><br>
-                                <i class="fa fa-mobile"></i> <a href="tel://+917123456789">+91 7123456789</a></p>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
-                               href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
-                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
-                        </div>
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
-                                map</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="rsvp text-center" id="rsvp">
-
-    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+            </figure>
+            <figure class="reel reel--wide reveal">
+                <div class="reel-frame">
+                    <video src="media/videos/16ba122e-3d3e-4736-9d15-f11492c37902.MP4#t=0.1" muted loop playsinline preload="metadata"></video>
+                    <button class="reel-sound" type="button" aria-pressed="false" aria-label="Turn sound on">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="wave" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path class="mute" d="M16 9l5 6M21 9l-5 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
                     </button>
-                    <div class="section-padding">
-                        <h3>Thank you!</h3>
-                        <p>We are glad to see you join us on our big day.</p>
-                        <div id="add-to-cal"></div>
-                    </div>
                 </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h3>What are you waiting for?</h3>
-                <p>We would greatly appreciate if you could RSVP before 1st of November '17</p>
-                <form id="rsvp-form" class="rsvp-form"
-                      action=""
-                      method="POST">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
-                                                                     required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
-                                                                 required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="Husband/Wife or kids"
-                                                                  required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                class="" min="0"
-                                                                placeholder="Invite code"
-                                                                required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="alert-wrapper"></div>
-                    </div>
-                    <button class="btn-fill rsvp-btn">
-                        Yes,
-                        that's me!
-                    </button>
-                </form>
-            </div>
+            </figure>
         </div>
-    </div>
-</section>
+    </section>
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center content">
-                <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                <p>Crafted by Ram with lots of <span class="fa fa-heart pulse2"></span> for Antara</p>
-            </div>
+    <!-- ============ Venues ============ -->
+    <section class="section venues" id="venues">
+        <header class="section-head reveal">
+            <p class="eyebrow">Where to find us</p>
+            <h2>The Venues</h2>
+            <div class="ornament" aria-hidden="true"></div>
+        </header>
+
+        <div class="venue-grid">
+            <article class="venue reveal">
+                <p class="venue-tag">Haldi &amp; Nikah</p>
+                <h3>Swayamvar Mangal Karyalaya</h3>
+                <p class="venue-addr">Panchavati, Akluj, Maharashtra</p>
+                <div class="venue-map">
+                    <iframe title="Map to Swayamvar Mangal Karyalaya, Akluj" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            src="https://www.google.com/maps?q=Swayamvar%20Mangal%20Karyalaya%2C%20Panchavati%2C%20Akluj&amp;output=embed"></iframe>
+                </div>
+                <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Swayamvar%20Mangal%20Karyalaya%2C%20Panchavati%2C%20Akluj" target="_blank" rel="noopener">Get directions</a>
+            </article>
+
+            <article class="venue reveal">
+                <p class="venue-tag">Walima</p>
+                <h3>Rajmata Jijau Sanskrutik Bhavan</h3>
+                <p class="venue-addr">Shriramnagar, Baramati, Maharashtra</p>
+                <div class="venue-map">
+                    <iframe title="Map to Rajmata Jijau Sanskrutik Bhavan, Baramati" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            src="https://www.google.com/maps?q=Rajmata%20Jijau%20Sanskrutik%20Bhavan%2C%20Shriramnagar%2C%20Baramati&amp;output=embed"></iframe>
+                </div>
+                <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rajmata%20Jijau%20Sanskrutik%20Bhavan%2C%20Shriramnagar%2C%20Baramati" target="_blank" rel="noopener">Get directions</a>
+            </article>
         </div>
+    </section>
+
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="footer">
+    <div class="footer-inner reveal">
+        <p class="footer-dua" lang="ar" dir="rtl">بَارَكَ ٱللَّٰهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
+        <p class="footer-dua-en">“May Allah bless you both, shower His blessings upon you, and unite you in goodness.”</p>
+        <div class="ornament ornament--light" aria-hidden="true"></div>
+        <p class="footer-line">Your presence is our joy, and your duas our greatest gift.</p>
+        <p class="footer-names">Aftab <span>&amp;</span> Suhana</p>
+        <p class="footer-date">20 · 11 · 2026</p>
+        <a class="to-top" href="#top">Back to top ↑</a>
     </div>
 </footer>
-<script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
-<script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/jquery.flexslider-min.js"></script>
-<script src="js/jquery.mb.YTPlayer.min.js"></script>
-<script src="js/vendor/ouical.js"></script>
-<script src="js/scripts.min.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
-<!-- Google Analytics -->
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-46465113-4', 'auto');
-    ga('send', 'pageview');
-</script>
+
+<!-- ============ Lightbox ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <button class="lb-btn lb-close" type="button" aria-label="Close">×</button>
+    <button class="lb-btn lb-prev" type="button" aria-label="Previous photo">‹</button>
+    <figure class="lb-figure">
+        <img class="lb-img" alt="">
+        <figcaption class="lb-count"></figcaption>
+    </figure>
+    <button class="lb-btn lb-next" type="button" aria-label="Next photo">›</button>
+</div>
+
+<button class="petal-toggle" id="petal-toggle" type="button" aria-pressed="true" aria-label="Falling petals on">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 3 4 6 4 9a4 4 0 0 1-8 0c0-3 1-6 4-9z" fill="currentColor"/><path d="M12 21v-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+</button>
+
+<script src="js/wedding.js" defer></script>
 </body>
 </html>

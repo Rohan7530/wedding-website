@@ -364,3 +364,82 @@
         padding-top: 20px;
     }
 }
+
+@media screen and (max-width: 991px) {
+    .hero {
+        height: 100vh;
+        height: 100svh;
+        min-height: 560px;
+    }
+
+    .hero .container {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .hero .hero-content {
+        padding-top: 0;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .hero .hero-rsvp {
+        display: inline-block;
+        margin: 0 auto;
+        width: auto;
+    }
+
+    .carousel-controls {
+        bottom: 34px;
+    }
+
+    .hero .down-arrow {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        min-height: 540px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero .hero-eyebrow {
+        font-size: 9px;
+        letter-spacing: 2px;
+        margin-bottom: 18px;
+    }
+
+    .hero .hero-date {
+        font-size: 13px;
+        margin-bottom: 24px;
+    }
+
+    .hero .hero-date span {
+        font-size: 9px;
+    }
+
+    .hero .hero-rsvp {
+        padding: 12px 22px;
+    }
+
+    .carousel-controls {
+        bottom: 24px;
+        gap: 12px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-slide,
+    .hero .hero-content,
+    .invitation-envelope,
+    .envelope-card,
+    .envelope-flap {
+        transition-duration: 0.01ms !important;
+    }
+}
